@@ -17,6 +17,7 @@ int UsingDoWhileLoop();
 int main() {
     UsingForLoop();
     UsingWhileLoop();
+    UsingDoWhileLoop();
     return 0;
 }
 
@@ -53,6 +54,26 @@ int UsingWhileLoop() {
         printf("\n");
         i++;
     }
+    printf("\n");
+    return 0;
+}
+
+int UsingDoWhileLoop() {
+    int i = 1;
+    int j;
+    int count;
+    printf("By Using Do While Loop : \n");
+    do {
+        count = 65;
+        j=1;
+        do {
+            printf("%c    ", count);
+            count = count + 1;
+            j++;
+        }while (j <= 5);
+        printf("\n");
+        i++;
+    }while (i <= 5);
     printf("\n");
     return 0;
 }
