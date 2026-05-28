@@ -17,6 +17,8 @@ int UsingDoWhileLoop();
 
 int main() {
     UsingForLoop();
+    UsingWhileLoop();
+    UsingDoWhileLoop();
     return 0;
 }
 
@@ -48,7 +50,7 @@ int UsingWhileLoop() {
     while (i <= 5) {
         k = (2 * i) - 1;
         j = 1;
-        while (j <= 5) {
+        while (j <= i) {
             cout << k << "  ";
             k += 2;
             j++;
@@ -60,4 +62,22 @@ int UsingWhileLoop() {
     return 0;
 }
 
-
+int UsingDoWhileLoop() {
+    int i = 1;
+    int j;
+    int k;
+    cout << "By Using Do While Loop : " << endl;
+    do {
+        j = 1;
+        k = (2 * i) - 1;
+        do {
+            j++;
+            cout << k << "  ";
+            k += 2;
+        } while (j <= i);
+        cout << endl;
+        i++;
+    } while (i <= 5);
+    cout << endl;
+    return 0;
+}
