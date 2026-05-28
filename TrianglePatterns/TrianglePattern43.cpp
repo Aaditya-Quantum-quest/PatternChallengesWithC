@@ -24,6 +24,7 @@ int UsingForLoop() {
     int i;
     int j;
     int k;
+    cout << "By Using For Loop : " << endl;
     for (i = 1; i <= 5; i++) {
         k = (2 * i) - 1;
         for (j = 1; j <= i; j++) {
@@ -39,4 +40,24 @@ int UsingForLoop() {
     return 0;
 }
 
-int
+int UsingWhileLoop() {
+    int i = 1;
+    int j;
+    int k;
+    cout << "By Using While Loop : " << endl;
+    while (i <= 5) {
+        k = (2 * i) - 1;
+        j = 1;
+        while (j <= 5) {
+            cout << k << "  ";
+            k += 2;
+            j++;
+        }
+        i++;
+        cout << endl;
+    }
+    cout << endl;
+    return 0;
+}
+
+
