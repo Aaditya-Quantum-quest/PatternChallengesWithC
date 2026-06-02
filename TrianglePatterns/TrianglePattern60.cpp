@@ -18,12 +18,13 @@ int UsingForLoop();
 
 int main() {
     UsingForLoop();
+    UsingWhileLoop();
     return 0;
 }
 
 int UsingForLoop() {
     int start;
-    int end = 5;
+    int end = 6;
     int iterator;
     int counter = 0;
     cout << "By Using for Loop : " << endl;
@@ -37,6 +38,30 @@ int UsingForLoop() {
             counter--;
         }
         cout << endl;
+    }
+    cout << endl;
+    return 0;
+}
+
+int UsingWhileLoop() {
+    int start = 1;
+    int end = 6;
+    int iterator;
+    int counter = 0;
+    cout << "By Using While Loop : " << endl;
+    while (start <= end) {
+        iterator = 1;
+        while (iterator <= start) {
+            cout << counter << "    ";
+            iterator++;
+        }
+        if (counter == 0) {
+            counter++;
+        } else {
+            counter--;
+        }
+        cout << endl;
+        start++;
     }
     cout << endl;
     return 0;
