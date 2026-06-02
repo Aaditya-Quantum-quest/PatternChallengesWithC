@@ -19,6 +19,7 @@ int UsingForLoop();
 int main() {
     UsingForLoop();
     UsingWhileLoop();
+    UsingDoWhileLoop();
     return 0;
 }
 
@@ -63,6 +64,30 @@ int UsingWhileLoop() {
         cout << endl;
         start++;
     }
+    cout << endl;
+    return 0;
+}
+
+int UsingDoWhileLoop() {
+    int start = 1;
+    int end = 6;
+    int iterator;
+    int counter = 0;
+    cout << "By Using Do While Loop : " << endl;
+    do {
+        iterator = 1;
+        do {
+            iterator++;
+            cout << counter << "    ";
+        } while (iterator <= start);
+        cout << endl;
+        start++;
+        if (counter == 0) {
+            counter++;
+        } else {
+            counter--;
+        }
+    } while (start <= end);
     cout << endl;
     return 0;
 }
